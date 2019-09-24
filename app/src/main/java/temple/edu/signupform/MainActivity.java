@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText username, email, password, password_confirm;
     String sUsername, sEmail, sPassword, sPassword_Confirm;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         //converting all the texts to string.
+        boolean x = true;
+        boolean y = true;
         sUsername = username.getText().toString().trim();
         sEmail = email.getText().toString().trim();
         sPassword = password.getText().toString().trim();
@@ -41,12 +44,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //making sure all the fields are filled
         if (sUsername.isEmpty() || sEmail.isEmpty() || sPassword.isEmpty() || sPassword_Confirm.isEmpty()) {
             Toast.makeText(this, "Please enter all the information!", Toast.LENGTH_SHORT).show();
+            x = false;
         }
         //making sure that the password and password confirmation field are not empty first before checking whether they are matching or not
         if (sPassword.isEmpty() == false && sPassword_Confirm.isEmpty() == false && sPassword.equals(sPassword_Confirm) == false) {
             Toast.makeText(this, "Your password and password confirmation does not match!", Toast.LENGTH_SHORT).show();
+            y = false;
         }
-        else
+
+        if (x == true && y == true)
         {
             Toast.makeText(this, "Welcome to SignUpForm App!", Toast.LENGTH_LONG).show();
         }

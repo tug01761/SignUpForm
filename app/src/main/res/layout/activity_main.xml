@@ -45,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/getPassword"
+        android:inputType="textPassword"
         android:layout_marginBottom="10dp"></EditText>
 
     <TextView
@@ -55,6 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/getPasswordConfirm"
+        android:inputType="textPassword"
         android:layout_marginBottom="10dp"></EditText>
 
     <Button
@@ -63,6 +65,8 @@
         android:layout_gravity="center"
         android:id="@+id/saveBtn"
         android:text="Save"></Button>
+
+
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
