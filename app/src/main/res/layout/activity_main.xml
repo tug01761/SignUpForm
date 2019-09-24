@@ -14,6 +14,7 @@
         android:textStyle="bold"
         android:textSize="20dp"
         android:textColor="@android:color/holo_blue_light"
+        android:layout_marginBottom="60dp"
         android:text="SignUpForm App"></TextView>
 
     <TextView
@@ -23,7 +24,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/getUsername"></EditText>
+        android:id="@+id/getUsername"
+        android:layout_marginBottom="10dp"></EditText>
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,7 +34,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/getEmail"></EditText>
+        android:id="@+id/getEmail"
+        android:layout_marginBottom="10dp"></EditText>
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,7 +44,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/getPassword"></EditText>
+        android:id="@+id/getPassword"
+        android:layout_marginBottom="10dp"></EditText>
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,7 +54,15 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/getPasswordConfirm"></EditText>
+        android:id="@+id/getPasswordConfirm"
+        android:layout_marginBottom="10dp"></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/saveBtn"
+        android:text="Save"></Button>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
