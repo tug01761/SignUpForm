@@ -11,11 +11,13 @@ meeting the criteria._
 
 ## Screenshots Showing the Toast and Final Screen
 
-![Use Case Image](ERROR_1.png)
 ##There are some empty fields
+![Use Case Image](ERROR_1.png)
 
-![Use Case Image](ERROR_2.png)
+
 ##The password does not match
+![Use Case Image](ERROR_2.png)
 
-![Use Case Image](REGISTERED.png)
+
 ##Final Welcome Screen
+![Use Case Image](REGISTERED.png)
