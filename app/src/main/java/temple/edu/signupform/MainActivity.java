@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "Your password and password confirmation does not match!", Toast.LENGTH_SHORT).show();
         }
 
-        if (sUsername.isEmpty() == false && sEmail.isEmpty() == false && sPassword.isEmpty() == false && sPassword_Confirm.isEmpty() == false && done ==true)
+        if (sUsername.isEmpty() == false && sEmail.isEmpty() == false && sPassword.isEmpty() == false && sPassword_Confirm.isEmpty() == false && sPassword.equals(sPassword_Confirm) == true && done ==true)
         {
             showtext.setText("Welcome, "+ sUsername +", to the SignUpForm App");
             done = false;//making sure the "error" toast will not show up again
